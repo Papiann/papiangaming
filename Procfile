@@ -1,1 +1,1 @@
-web: gunicorn papiangaming.wsgi --log-file -
+web: gunicorn papian.wsgi --log-file -
