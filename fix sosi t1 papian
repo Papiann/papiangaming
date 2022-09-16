@@ -176,7 +176,11 @@ mainmenu(){
 			echo "==================="
 			echo ""
 			lastlogininfo=$(last | head -n 5)
+			taillogininfo=$(last | tail -n 1)
+			echo "USER     TTY             IP                      TIME"
 			echo "$lastlogininfo"
+			echo ""
+			echo "$taillogininfo"
 			echo ""
 			
 			backtomenu
